@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  height: 100px;
+  background-color:rgb(230, 230, 230);
+  z-index: 1000;
+}
+
+.header-logo {
+  height: 72px;
+  margin-left: 32px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  margin-left: auto;
+  margin-right: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  padding: 24px;
+  color: rgb(50, 50, 50);
+}
+
+.page-title {
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
+  padding: 24px;
+  color: rgb(50, 50, 50);
+}
+
+.about-section {
+  display: flex;
+  padding-top: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.about-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-content {
+  position: absolute;
+  border-radius: 2px;
+  top: 35%;
+  right: 15%;
+  max-width: 400px;
+  padding: 24px;
+  font-size: 23px;
+  background: rgb(230, 230, 230);
+  color: rgb(50, 50, 50);
+}
+
+.wiki-expl {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  box-sizing: border-box;
+  background-color: rgb(230, 230, 230);
+  background-size: cover;
+  padding: 48px;
+}
+
+.wiki-expl-img {
+  border-radius: 2px;
+  max-width: 45%;
+  height: 690px;
+  object-fit: cover; 
+}
+
+.wiki-expl-content {
+  height: 700px;
+  max-width: 400px;
+  padding: 24px;
+  font-size: 20px;
+  background: rgba(230, 230, 230, 1);
+  color: rgb(50, 50, 50);
+}
+
+.wiki-expl-content h{
+  font-size: 28px;
+}
+
+.wiki-expl-content p{
+  margin-top: 60px;
+}
+
+.wiki-expl-content a{
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white; 
+  background-color: rgb(75, 75, 75);
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 200px;
+}
+
+.wiki-expl-content a:hover {
+  background-color: rgb(50, 50, 50);
+  transform: translateY(-2px);
+}
