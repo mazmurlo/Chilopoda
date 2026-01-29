@@ -135,3 +135,52 @@ html {
   background-color: rgb(50, 50, 50);
   transform: translateY(-2px);
 }
+
+.contact-box {
+  padding: 24px;
+  padding-top: 196px;
+  padding-bottom: 212px;
+  position: relative;
+  width: relative;
+
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.contact-text {
+  margin-right: 15%;
+  color: rgb(50, 50, 50);
+}
+
+.contact-img {
+  margin-left: 2%;
+  border-radius: 2px;
+  max-width: 40%;
+  min-height: 560px;
+  object-fit: cover; 
+  border-radius: 2px;
+}
+
+.contact-box h{
+  font-size: 28px;
+  color: rgb(50, 50, 50);
+  
+}
+
+.contact-box p{
+  padding-top: 12px;
+}
+
+.footer {
+  position: relative;
+  padding: 24px;
+  background-color: rgb(75, 75, 75);
+  color: white; 
+}
+
+.footer-text {
+  color: white;
+  text-decoration: none;
+
+}
