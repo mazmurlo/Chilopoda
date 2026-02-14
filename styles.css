@@ -1,75 +1,93 @@
 *,
-*::after,
-*::before {
-  padding: 0;
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 * {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
+/* ================= NAVBAR ================= */
+
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(230, 230, 230);
   display: flex;
   align-items: center;
-  width: 100%;
-  position: fixed;
-  height: 100px;
-  background-color:rgb(230, 230, 230);
   z-index: 1000;
+  padding: 0 32px;
 }
 
 .header-logo {
   height: 72px;
-  margin-left: 32px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  list-style: none;
-  margin-left: auto;
-  margin-right: 32px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  display: block;
-  font-size: 20px;
-  padding: 24px;
-  color: rgb(50, 50, 50);
 }
 
 .page-title {
   text-decoration: none;
-  display: block;
   font-size: 30px;
   padding: 24px;
   color: rgb(50, 50, 50);
 }
 
-.about-section {
+.nav-links {
+  list-style: none;
   display: flex;
-  padding-top: 100px;
-  position: relative;
-  width: 100%;
+  margin-left: auto;
 }
 
-.about-section img {
-  width: 100%;
-  height: auto;
-  display: block;
+.nav-links a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 24px;
+  color: rgb(50, 50, 50);
+}
+
+
+#nav-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: rgb(50, 50, 50);
+}
+
+
+.page-wrapper {
+  padding-top: 100px;
+}
+
+.about-section {
+  position: relative;
 }
 
 .about-content {
   position: absolute;
-  border-radius: 2px;
   top: 35%;
   right: 15%;
   max-width: 400px;
@@ -77,110 +95,135 @@ html {
   font-size: 23px;
   background: rgb(230, 230, 230);
   color: rgb(50, 50, 50);
+  border-radius: 2px;
 }
 
-.wiki-expl {
-  position: relative;
-  width: 100%;
-  min-height: 400px;
 
+.wiki-expl {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15%;
-  box-sizing: border-box;
-  background-color: rgb(230, 230, 230);
-  background-size: cover;
   padding: 48px;
+  background-color: rgb(230, 230, 230);
 }
 
 .wiki-expl-img {
-  border-radius: 2px;
   max-width: 45%;
-  height: 690px;
-  object-fit: cover; 
+  border-radius: 2px;
 }
 
 .wiki-expl-content {
-  height: 700px;
-  max-width: 400px;
+  max-width: 500px;
   padding: 24px;
   font-size: 20px;
-  background: rgba(230, 230, 230, 1);
   color: rgb(50, 50, 50);
 }
 
-.wiki-expl-content h{
+.wiki-expl-content h1 {
   font-size: 28px;
 }
 
-.wiki-expl-content p{
-  margin-top: 60px;
+.wiki-expl-content p {
+  margin-top: 24px;
 }
 
-.wiki-expl-content a{
+.wiki-expl-content a {
   display: inline-block;
+  margin-top: 32px;
   padding: 12px 24px;
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
-  color: white; 
+  color: white;
   background-color: rgb(75, 75, 75);
   border-radius: 8px;
-  transition: background 0.3s, transform 0.2s;
-  margin-top: 200px;
 }
 
 .wiki-expl-content a:hover {
   background-color: rgb(50, 50, 50);
-  transform: translateY(-2px);
 }
 
-.contact-box {
-  padding: 24px;
-  padding-top: 196px;
-  padding-bottom: 212px;
-  position: relative;
-  width: relative;
+.contact-box { padding: 24px; padding-top: 196px; padding-bottom: 212px; position: relative; width: relative; display: flex; justify-content: center; gap: 10%; } 
+.contact-text { margin-right: 15%; color: rgb(50, 50, 50); } 
+.contact-img { margin-left: 2%; border-radius: 2px; max-width: 40%; min-height: 560px; object-fit: cover; border-radius: 2px; } 
+.contact-box h{ font-size: 28px; color: rgb(50, 50, 50); } 
+.contact-box p{ padding-top: 12px; }
 
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-}
-
-.contact-text {
-  margin-right: 15%;
-  color: rgb(50, 50, 50);
-}
-
-.contact-img {
-  margin-left: 2%;
-  border-radius: 2px;
-  max-width: 40%;
-  min-height: 560px;
-  object-fit: cover; 
-  border-radius: 2px;
-}
-
-.contact-box h{
-  font-size: 28px;
-  color: rgb(50, 50, 50);
-  
-}
-
-.contact-box p{
-  padding-top: 12px;
-}
 
 .footer {
-  position: relative;
   padding: 24px;
   background-color: rgb(75, 75, 75);
-  color: white; 
+  color: white;
+  font-size: 14px;
 }
 
 .footer-text {
   color: white;
   text-decoration: none;
+}
 
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 70px;
+    padding: 0 16px;
+  }
+
+  .page-wrapper {
+    padding-top: 70px;
+  }
+
+  .page-title {
+    font-size: 20px;
+    padding: 0 12px;
+  }
+
+  .header-logo {
+    height: 48px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgb(230, 230, 230);
+    flex-direction: column;
+    display: none;
+  }
+
+  #nav-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 16px;
+    font-size: 18px;
+  }
+
+  .about-content {
+    position: static;
+    margin: 16px;
+    font-size: 18px;
+  }
+
+  .wiki-expl {
+    flex-direction: column;
+    padding: 32px 16px;
+  }
+
+  .wiki-expl-img {
+    max-width: 100%;
+  }
+
+  .wiki-expl-content {
+    max-width: 100%;
+    padding: 16px;
+  }
 }

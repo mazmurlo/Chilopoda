@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chilopoda</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chilopoda</title>
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
   <nav class="navbar">
-    <a href="#about-section"><img class="header-logo" src="images/chilopodalogov1croppedscaled.png"/></a>
+    <a href="#about-section">
+      <img class="header-logo" src="images/chilopodalogov1croppedscaled.png" alt="Chilopoda logo">
+    </a>
+
     <a class="page-title" href="#about-section">Chilopoda</a>
+
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
     <ul class="nav-links">
       <li><a href="https://wiki.chilopoda.org">WikiChilopoda</a></li>
       <li><a href="contact/index.html">Contact</a></li>
     </ul>
   </nav>
 
-  <div class="page-wrapper">
-    <div class="about-section" id="about-section">
-      <img src="images/scolocryptops_gracilis_1.jpeg" alt="">
+  <main class="page-wrapper">
+
+    <section class="about-section" id="about-section">
+      <img src="images/scolocryptops_gracilis_1.jpeg" alt="Scolocryptops gracilis">
       <div class="about-content">
         <p>Resources about centipedes for researchers and citizen scientists alike.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="wiki-expl" id="wiki-expl">
+    <section class="wiki-expl">
       <img class="wiki-expl-img" src="images/scolopendra_polymorpha_infobox.png" alt="Scolopendra polymorpha infobox">
-      <div class="wiki-expl-content">
-        <h1>
-          WikiChilopoda
-        </h1>
-        <p>
-          WikiChilopoda is a wiki designed for the sole purpose of documenting centipedes. A specific focus is given on their taxonomy, such as their ranks or descriptions, but other general notes on their biology, from individual species behavior to general morphology are included. As an open freely editable wiki, it's reliant on its editors for its content, enabling its growth and maintenance.  
-        </p>
-        <a href="https://wiki.chilopoda.org">
-          Explore WikiChilopoda
-        </a>
-      </div>
-    </div>
-    <div class="footer"><p>© 2026 Chilopoda. <a class="footer-text" href="https://github.com/mazmurlo/Chilopoda">Source code licensed under the MIT License.</a> All rights reserved. Photo accreditation goes to <a class="footer-text" href="https://www.flickr.com/photos/ozopore/">Evrytte Carlson</a>.</p></div>
 
-  </div>
+      <div class="wiki-expl-content">
+        <h1>WikiChilopoda</h1>
+        <p>
+          WikiChilopoda is a wiki designed for the sole purpose of documenting centipedes. A specific focus is given on their taxonomy, but broader notes on biology, morphology, and behavior are included. As an open, freely editable wiki, it relies on its editors for growth and maintenance.
+        </p>
+
+        <a href="https://wiki.chilopoda.org">Explore WikiChilopoda</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        © 2026 Chilopoda.
+        <a class="footer-text" href="https://github.com/mazmurlo/Chilopoda">Source code licensed under the MIT License.</a>
+        All rights reserved.
+        Photo accreditation goes to
+        <a class="footer-text" href="https://www.flickr.com/photos/ozopore/">Evrytte Carlson</a>.
+      </p>
+    </footer>
+
+  </main>
+
 </body>
 </html>
